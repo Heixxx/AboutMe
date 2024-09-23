@@ -1,0 +1,24 @@
+<nav>
+  <div class="wrapper pc">
+    <div class="left">About Me</div>
+    <div class="right">
+      <a class="right__link">Websites</a>
+      <a class="right__link">Unity</a>
+      <a class="right__link">Others</a>
+    </div>
+  </div>
+  <div class="wrapper mobi">
+    <div class="blur"></div>
+    <div class="left">About Me</div>
+    <div class="right">
+      <div class="mobiBtn" (click)="togglePanel()">
+        <div class="btn"></div>
+      </div>
+    </div>
+    <div class="panel" [ngClass]="{'panel-animation' : navBtn}">
+      <a class="panel__link">Websites</a>
+      <a class="panel__link">Unity</a>
+      <a class="panel__link">Others</a>
+    </div>
+  </div>
+</nav>
